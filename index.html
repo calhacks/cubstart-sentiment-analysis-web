@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Import Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+    <!-- Connect to Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCLa18a_dqL1w8dAYP-hSg5PybfnNccCAw",
+        authDomain: "cubstart-sentiment-analysis.firebaseapp.com",
+        databaseURL: "https://cubstart-sentiment-analysis.firebaseio.com",
+        projectId: "cubstart-sentiment-analysis",
+        storageBucket: "cubstart-sentiment-analysis.appspot.com",
+        messagingSenderId: "431586610110",
+        appId: "1:431586610110:web:cb86e458d5687f566087ef",
+        measurementId: "G-P1JG3ZHJMF"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    
+    <title>Sentiment Analyzer</title>
+  </head>
+  <body>
+    <h1 id="result">
+      Sentiment Analyzer
+    </h1>
+    <input id="input" placeholder="Text here..."/>
+    <button id="button">Analyze</button>
+    <script src="./script.js"></script>
+  </body> 
+</html>
